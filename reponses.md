@@ -14,6 +14,7 @@ pour renvoyer un autre  nom que "Example"
 Solution:   
 public String getName() {
 return this.Name;
+
 }
 
 Triangulation
