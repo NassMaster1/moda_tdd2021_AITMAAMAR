@@ -18,7 +18,8 @@ public class Dictionary {
     }
 
     public boolean isEmpty(){
-        return true;
+
+        return this.translations.isEmpty();
     }
 
     public void  addTranslation(String s1,String s2)
