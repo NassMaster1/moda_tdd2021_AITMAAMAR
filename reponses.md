@@ -16,5 +16,8 @@ public String getName() {
 return this.Name;
 }
 
+Triangulation
+QST1: Est-il possible de faire un test qui n’implique l’ajout que d’une seule de ces deux méthodes ?
+non c'est pas possible car c'est pas le meme comportement des deux méthodes.
 
 

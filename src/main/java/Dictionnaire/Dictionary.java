@@ -16,4 +16,14 @@ public class Dictionary {
         return true;
     }
 
+    public void  addTranslation(String s1,String s2)
+        {
+
+        }
+
+        public String getTranslation(String s)
+        {
+         return  "against";
+        }
+
 }
