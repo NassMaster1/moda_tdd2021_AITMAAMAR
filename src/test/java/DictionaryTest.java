@@ -4,6 +4,7 @@ import Dictionnaire.Dictionary;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
+
 public class DictionaryTest {
     Dictionary dico;
 
@@ -20,6 +21,13 @@ public class DictionaryTest {
     @Test public void DictionaryVide(){
         dico = new Dictionary("Example");
         assertThat(dico.isEmpty(),equalTo(true));
+    }
+
+    @Test
+    public void testOneTranslation() {
+        dico = new Dictionary("Example");
+        dico.addTranslation("contre", "against");
+        assertThat(dico.getTranslation("contre"), equalTo("against"));
     }
 
 }
