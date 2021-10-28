@@ -18,7 +18,6 @@ public class Dictionary {
     }
 
     public boolean isEmpty(){
-
         return this.translations.isEmpty();
     }
 

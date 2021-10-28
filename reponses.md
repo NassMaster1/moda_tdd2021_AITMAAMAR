@@ -20,4 +20,10 @@ Triangulation
 QST1: Est-il possible de faire un test qui n’implique l’ajout que d’une seule de ces deux méthodes ?
 non c'est pas possible car c'est pas le meme comportement des deux méthodes.
 
+Traductions multiples
+Que proposez-vous pour pouvoir gérer les traductions multiples ?
+on utilise une hashMap<String,List> pour pouvoir gerer la traduction 
+mulp; La list à l'intérieur de hashMap pour sotocker les mots multiples 
+
+
 
