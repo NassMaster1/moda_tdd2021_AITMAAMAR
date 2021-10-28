@@ -33,7 +33,7 @@ public class Dictionary {
             List<String> listeExist=translationsMultp.get(mot);
             listeExist.add(traduction);
             translationsMultp.put(traduction, listeExist);
-        }
+             }
         }
 
         public List<String> getTranslation(String mot){

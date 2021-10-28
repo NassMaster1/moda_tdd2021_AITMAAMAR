@@ -3,7 +3,9 @@ import Dictionnaire.Dictionary;
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
@@ -41,8 +43,11 @@ public class DictionaryTest {
 
     @Test
     public void testOneTranslation() {
-        assertThat(dico.getTranslation("contre"), equalTo("against"));
-        assertThat(dico.getTranslation("autre"), equalTo("against"));
+        dico.addTranslation("contre","against");
+        dico.addTranslation("contre","versus");
+        List<String> listeTest=dico.getTranslation("contre");
+        assertThat(listeTest, containsInAnyOrder("against","versus"));
+        //assertThat(listeTraduMulp, containsInAnyOrder("against"));
 
     }
 
@@ -53,5 +58,13 @@ public class DictionaryTest {
         assertThat(listeTraduMulp, containsInAnyOrder("against","versus"));
 
     }
+
+
+    @Test
+    public void testInverseInverse() {
+
+    }
+
+
 
 }
