@@ -33,7 +33,16 @@ public class Dictionary {
              }
         }
 
-
+    public List getTranslation(String mot) {
+        List<String> returnList = null;
+        for(Map.Entry<String, List<String>> entry : translationsMultp.entrySet()){
+            if (mot.equals(entry.getValue())) {
+                returnList.add(entry.getKey());
+                return returnList;
+            }
+        }
+        return this.translationsMultp.get(mot);
+    }
 
 
 
