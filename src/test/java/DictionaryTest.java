@@ -36,7 +36,6 @@ public class DictionaryTest {
     public void testOneTranslation() {
         assertThat(dico.getTranslation("contre"), equalTo("against"));
         assertThat(dico.getTranslation("autre"), equalTo("against"));
-
     }
 
 }
