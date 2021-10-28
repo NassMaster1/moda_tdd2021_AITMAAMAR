@@ -18,7 +18,8 @@ public class DictionaryTest {
     }
 
     @Test public void DictionaryVide(){
-        assertThat(dico.isEmpty(),equalTo(false));
+        dico = new Dictionary("Example");
+        assertThat(dico.isEmpty(),equalTo(true));
     }
 
 }

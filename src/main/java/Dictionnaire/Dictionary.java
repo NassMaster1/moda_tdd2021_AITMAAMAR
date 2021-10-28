@@ -10,6 +10,10 @@ public class Dictionary {
 
     public String getName() {
         return this.Name;
-
     }
+
+    public boolean isEmpty(){
+        return true;
+    }
+
 }
