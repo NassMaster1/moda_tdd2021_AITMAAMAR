@@ -1,11 +1,16 @@
 package Dictionnaire;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Dictionary {
 
     private String Name;
+    private Map<String, String> translations;
 
     public Dictionary( String name) {
         this.Name=name;
+        this.translations=new HashMap<>();
     }
 
     public String getName() {
