@@ -15,7 +15,11 @@ public class DictionaryTest {
     @Before
     public void initialize(){
         dico= new Dictionary("Example");
-        List<String> autre_mots=new ArrayList();
+    }
+
+    @After
+    public void clean(){
+        dico=null;
     }
 
     public DictionaryTest() {
