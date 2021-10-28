@@ -2,7 +2,7 @@ package Dictionnaire;
 
 import java.util.*;
 
-public class Dictionary {
+public class Dictionary implements IDictionary {
 
     private String Name;
     private Map<String, List<String> >translationsMultp;

@@ -1,3 +1,6 @@
+#GIT
+https://github.com/NassMaster1/moda_tdd2021_AITMAAMAR
+
 #Qst1:A quoi servent ces librairies JUnit, Hamcrest et Mockito. ?
 reponse 1: 
 c'est des frameworks pour ecrire des tests unitaires dans le language de programmation 
@@ -24,7 +27,7 @@ non c'est pas possible car c'est pas le meme comportement des deux méthodes.
 Traductions multiples
 Que proposez-vous pour pouvoir gérer les traductions multiples ?
 on utilise une hashMap<String,List> pour pouvoir gerer la traduction 
-mulp; La list à l'intérieur de hashMap pour sotocker les mots multiples 
+mulp; La list à l'intérieur de hashMap pour sotocker les mots traductons multiples 
 
 
 

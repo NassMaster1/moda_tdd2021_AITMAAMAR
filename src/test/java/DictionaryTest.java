@@ -2,6 +2,7 @@ import org.junit.*;
 import Dictionnaire.Dictionary;
 
 
+import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -69,6 +70,7 @@ public class DictionaryTest {
         List<String> laListe = dico.getTranslation("contre");
         assertThat(laListe, containsInAnyOrder("against","versus","contre"));
     }
+
 
 
 
