@@ -17,4 +17,8 @@ public class DictionaryTest {
         assertThat(dico.getName(), equalTo("Example"));
     }
 
+    @Test public void DictionaryVide(){
+        assertThat(dico.isEmpty(),equalTo(false));
+    }
+
 }
