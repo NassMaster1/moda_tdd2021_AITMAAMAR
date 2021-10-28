@@ -41,8 +41,8 @@ public class DictionaryTest {
 
     @Test
     public void testOneTranslation() {
-        assertThat(dico.getMultipleTranslations("contre"), equalTo("against"));
-        assertThat(dico.getMultipleTranslations("autre"), equalTo("against"));
+        assertThat(dico.getTranslation("contre"), equalTo("against"));
+        assertThat(dico.getTranslation("autre"), equalTo("against"));
 
     }
 
