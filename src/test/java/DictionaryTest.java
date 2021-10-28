@@ -13,9 +13,8 @@ public class DictionaryTest {
 
     @Test
     public void testDictionaryName() {
-        dico = new Dictionary();
+        dico = new Dictionary("Example");
         assertThat(dico.getName(), equalTo("Example"));
     }
-
 
 }
