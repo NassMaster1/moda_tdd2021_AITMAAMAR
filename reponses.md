@@ -30,4 +30,7 @@ on utilise une hashMap<String,List> pour pouvoir gerer la traduction
 mulp; La list à l'intérieur de hashMap pour sotocker les mots traductons multiples 
 
 
+Chargement de fichier
+QST 1 : Le type de test : test d'integration 
+
 

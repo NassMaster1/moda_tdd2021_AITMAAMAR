@@ -43,7 +43,6 @@ public class DictionaryTest {
 
 
     @Test
-
         public void testOneTranslation() {
             listeTraduMulp.add("against");
             dico.addTranslation("contre", "against");
