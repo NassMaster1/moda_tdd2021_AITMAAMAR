@@ -42,7 +42,15 @@ public class DictionaryTest {
 
 
     @Test
-    public void testOneTranslation() {
+
+        public void testOneTranslation() {
+            listeTraduMulp.add("against");
+            dico.addTranslation("contre", "against");
+            assertThat(listeTraduMulp, containsInAnyOrder("against"));
+        }
+
+    @Test
+    public void testMulpTranslation() {
         dico.addTranslation("contre","against");
         dico.addTranslation("contre","versus");
         List<String> listeTest=dico.getTranslation("contre");
@@ -51,18 +59,15 @@ public class DictionaryTest {
 
     }
 
-    @Test
-    public void testMulpTranslation() {
-        listeTraduMulp.add("against");
-        listeTraduMulp.add("versus");
-        assertThat(listeTraduMulp, containsInAnyOrder("against","versus"));
-
-    }
-
 
     @Test
-    public void testInverseInverse() {
-
+    public void testTradInverse(){
+        dico.addTranslation("contre", "against");
+        dico.addTranslation("contre", "versus");
+        dico.addTranslation("against", "contre");
+        dico.addTranslation("versus", "contre");
+        List<String> laListe = dico.getTranslation("contre");
+        assertThat(laListe, containsInAnyOrder("against","versus","contre"));
     }
 
 

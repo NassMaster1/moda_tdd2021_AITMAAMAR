@@ -1,9 +1,6 @@
 package Dictionnaire;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Dictionary {
 
@@ -36,9 +33,8 @@ public class Dictionary {
              }
         }
 
-        public List<String> getTranslation(String mot){
-        return  this.translationsMultp.get(mot);
-        }
+
+
 
 
 }
