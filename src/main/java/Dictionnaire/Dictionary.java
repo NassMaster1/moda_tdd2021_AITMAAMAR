@@ -10,5 +10,6 @@ public class Dictionary {
 
     public String getName() {
         return "Example";
+
     }
 }
