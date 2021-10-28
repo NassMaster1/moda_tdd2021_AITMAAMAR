@@ -1,1 +1,1 @@
-
+[X] 1- refactor la méthode isEmpty dans la classe dictionnary
